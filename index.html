@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Claude Code — Cheat Sheet</title>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="logo">
+      <div class="logo-icon">CC</div>
+      Claude Code <span>Cheat Sheet</span>
+    </div>
+    <div class="search-wrap">
+      <span class="search-icon">⌕</span>
+      <input type="text" id="searchInput" placeholder="Rechercher une commande…" autocomplete="off" spellcheck="false">
+      <span class="search-count" id="searchCount"></span>
+      <span class="search-shortcut" id="searchShortcut">Ctrl+K</span>
+    </div>
+  </div>
+</header>
+
+<nav class="tabs-nav">
+  <ul class="tabs-list" id="tabsList"></ul>
+</nav>
+
+<main>
+  <div class="search-results-banner" id="searchBanner">
+    <span id="searchBannerText"></span>
+    <button class="clear-search" id="clearSearch">✕ Effacer</button>
+  </div>
+  <div id="allResults" class="all-results"></div>
+  <div id="tabPanels"></div>
+</main>
+
+<div class="toast" id="toast">✓ Copié !</div>
+
+<script src="script.js"></script>
+</body>
+</html>
