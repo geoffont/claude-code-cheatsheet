@@ -420,7 +420,7 @@ function shortcutRowHTML(s, q) {
     return `<kbd class="wide">${kh}</kbd>${!last ? '<span class="key-sep">+</span>' : ''}`;
   }).join('');
   const descHtml = q ? highlight(s.desc, q) : s.desc;
-  const copyText = s.keys.join(' + ') + ' — ' + s.desc.replace(/<[^>]*>/g, '');
+  const copyText = s.keys.join(' + ');
   return `<div class="shortcut-row" data-copy="${escapeAttr(copyText)}">
     <div class="keys-col">${keysHtml}</div>
     <div class="desc-col">${descHtml}</div>
